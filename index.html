@@ -2,129 +2,144 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>东莞市长安帝恒五金 - 精密针规专业制造商</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>帝恒五金模具配件 | 精密針規專業製造商</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Microsoft YaHei", sans-serif;
-        }
-        body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, #1a2938, #2c3e50);
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .section h2 {
-            color: #1a2938;
-            border-left: 4px solid #3498db;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .product-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-        .product-item {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 6px;
-            text-align: center;
-        }
-        .product-item img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-        .product-item h3 {
-            color: #2980b9;
-            margin-bottom: 0.5rem;
-        }
-        .contact-info li {
-            margin: 0.8rem 0;
-            font-size: 1.1rem;
-        }
-        footer {
-            background: #1a2938;
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",sans-serif;}
+        body{background:#f4f6f8;color:#333;line-height:1.7;}
+
+        /* 導航列 */
+        nav{background:#0f243b;text-align:center;padding:15px 0;}
+        nav a{color:#fff;text-decoration:none;margin:0 12px;font-size:16px;}
+        nav a:hover{color:#42a5f5;}
+
+        /* 頂部大橫幅 */
+        .banner{background:#15304d;color:#fff;text-align:center;padding:60px 20px;}
+        .banner h1{font-size:32px;margin-bottom:10px;}
+        .banner p{font-size:18px;opacity:0.9;}
+
+        .container{max-width:1100px;margin:auto;padding:40px 20px;}
+        h2{color:#0f243b;border-left:5px solid #2196f3;padding-left:15px;margin-bottom:20px;}
+
+        /* 公司介紹 */
+        .about{background:#fff;padding:30px;border-radius:8px;box-shadow:0 2px 10px #00000010;margin-bottom:40px;}
+
+        /* 產品列表 */
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;margin-bottom:40px;}
+        .product-card{background:#fff;border-radius:8px;box-shadow:0 3px 12px #00000010;overflow:hidden;text-align:center;padding-bottom:20px;}
+        .product-card img{width:100%;height:170px;object-fit:cover;}
+        .product-card h3{color:#0f243b;margin:15px 0 8px;}
+        .product-card p{padding:0 15px;color:#666;font-size:15px;}
+
+        /* 最新消息 */
+        .news{background:#fff;padding:30px;border-radius:8px;box-shadow:0 2px 10px #00000010;margin-bottom:40px;}
+        .news-item{padding:12px 0;border-bottom:1px solid #eee;}
+        .news-date{color:#2196f3;font-size:14px;margin-right:10px;}
+
+        /* 留言表單 */
+        .message{background:#fff;padding:30px;border-radius:8px;box-shadow:0 2px 10px #00000010;margin-bottom:40px;}
+        .message input,.message textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:4px;}
+        .message button{background:#2196f3;color:#fff;border:none;padding:12px 30px;border-radius:4px;cursor:pointer;}
+        .message button:hover{background:#1976d2;}
+
+        /* 聯絡資訊 */
+        .contact{background:#fff;padding:30px;border-radius:8px;box-shadow:0 2px 10px #00000010;margin-bottom:40px;}
+        .contact p{margin:10px 0;font-size:16px;}
+        .contact .email{color:#2196f3;font-weight:bold;}
+
+        footer{background:#0f243b;color:#fff;text-align:center;padding:20px 0;font-size:15px;}
     </style>
 </head>
 <body>
-    <header>
-        <h1>东莞市长安帝恒五金模具配件加工厂</h1>
-        <p>专注生产高品质、多材质精密针规 | 公差可达 ±0.001mm，支持定制</p>
-    </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>关于我们</h2>
-            <p>东莞市长安帝恒五金模具配件加工厂，位于东莞长安镇，是一家专业生产各类精密针规的实体工厂。我们拥有多年生产经验，专注于为模具、电子、五金等行业客户提供高精度、不同材质的针规产品，支持定制与批量生产。</p>
+<!-- 導航菜單 -->
+<nav>
+    <a href="#home">首頁</a>
+    <a href="#about">公司介紹</a>
+    <a href="#product">產品中心</a>
+    <a href="#news">最新消息</a>
+    <a href="#message">客戶留言</a>
+    <a href="#contact">聯絡我們</a>
+</nav>
+
+<!-- 頂部橫幅 -->
+<section class="banner" id="home">
+    <h1>东莞市长安帝恒五金模具配件加工厂</h1>
+    <p>專業精密針規製造 | 公差±0.001mm | 多材質訂製</p>
+</section>
+
+<div class="container">
+
+<!-- 公司介紹 -->
+<section class="about" id="about">
+    <h2>公司介紹</h2>
+    <p>东莞市长安帝恒五金模具配件加工厂，坐落於東莞長安鎮錦廈河南工業區，是一家專業研發、生產、銷售各類精密針規、模具配件的實力廠家。</p>
+    <p style="margin-top:10px;">工廠專注生產：硬質合金針規、高速鋼針規、陶瓷針規、非標訂製針規，適用於模具、電子、塑膠、五金精密檢測行業。本廠堅持高精度、高品質、交貨準時，可接受來圖、來樣訂製，歡迎海內外客戶長期合作。</p>
+</section>
+
+<!-- 產品中心 -->
+<section id="product">
+    <h2>產品中心</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png" alt="硬質合金針規">
+            <h3>硬質合金針規</h3>
+            <p>超高硬度、超耐磨，適合高頻精密檢測，公差±0.001mm</p>
         </div>
-
-        <div class="section">
-            <h2>主营产品：多材质精密针规</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png" alt="硬质合金针规">
-                    <h3>硬质合金针规</h3>
-                    <p>高硬度、高耐磨，适用于高频率检测</p>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin002.png" alt="高速钢针规">
-                    <h3>高速钢针规</h3>
-                    <p>性价比高，通用性强，尺寸齐全</p>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin003.png" alt="陶瓷针规">
-                    <h3>陶瓷针规</h3>
-                    <p>绝缘、防锈、无磁，特殊环境适用</p>
-                </div>
-                <div class="product-item">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin004.png" alt="定制非标针规">
-                    <h3>定制非标针规</h3>
-                    <p>按图纸定制，满足特殊检测需求</p>
-                </div>
-            </div>
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin002.png" alt="高速鋼針規">
+            <h3>高速鋼針規</h3>
+            <p>性價比高、韌性好，標準尺寸齊全，通用場合首選</p>
         </div>
-
-        <div class="section">
-            <h2>联系我们</h2>
-            <ul class="contact-info">
-                <li>📍 地址：广东省东莞市长安镇锦厦河南工业区锦荣路锦厦大厦2号铺位</li>
-                <li>📞 电话：(86-13532410868)</li>
-                <li>💬 WhatsApp / 微信：(winnienini_)</li>
-                <li>⏰ 营业时间：周一至周六 8:00 - 18:00</li>
-            </ul>
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin003.png" alt="陶瓷針規">
+            <h3>陶瓷針規</h3>
+            <p>絕緣、防鏽、無磁、耐高溫，特殊環境專用</p>
+        </div>
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin004.png" alt="非標訂製針規">
+            <h3>非標訂製針規</h3>
+            <p>來圖來樣訂製特殊尺寸、特殊公差、特殊形狀針規</p>
         </div>
     </div>
+</section>
 
-    <footer>
-        <p>© 2026 东莞市长安帝恒五金模具配件加工厂 | 版权所有</p>
-    </footer>
+<!-- 最新消息 -->
+<section class="news" id="news">
+    <h2>最新消息</h2>
+    <div class="news-item">
+        <span class="news-date">2026-05-13</span>
+        本廠全系列精密針規開放批量訂單，歡迎貿易公司、工廠長期合作報價。
+    </div>
+    <div class="news-item">
+        <span class="news-date">2026-05-13</span>
+        新增非標針規專業訂製服務，任何特殊規格均可生產。
+    </div>
+</section>
+
+<!-- 客戶留言 -->
+<section class="message" id="message">
+    <h2>客戶留言</h2>
+    <input type="text" placeholder="您的姓名">
+    <input type="text" placeholder="聯絡電話 / WhatsApp">
+    <textarea rows="5" placeholder="請輸入查詢內容、產品需求或報價諮詢..."></textarea>
+    <button>提交留言</button>
+</section>
+
+<!-- 聯絡我們 -->
+<section class="contact" id="contact">
+    <h2>聯絡我們</h2>
+    <p>📍 地址：廣東省東莞市長安鎮錦廈河南工業區錦榮路錦廈大廈2號鋪位</p>
+    <p>📞 電話：13532410868</p>
+    <p>📧 電郵：<span class="email">dihenghardwaremoldparts@gmail.com</span></p>
+    <p>⏰ 營業時間：周一至周六 08:00 - 18:00</p>
+</section>
+
+</div>
+
+<footer>
+    © 2026 东莞市长安帝恒五金模具配件加工厂 版權所有
+</footer>
+
 </body>
 </html>
