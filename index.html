@@ -8,46 +8,31 @@
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,"Microsoft YaHei",sans-serif;}
         :root{--main:#003366;--blue:#0066cc;--gray:#f5f7fa;}
         body{background:#fff;color:#333;line-height:1.7;}
-
-        /* 頂部語言選擇列 */
         .top-lang{background:#f8f8f8;text-align:right;padding:10px 20px;font-size:14px;}
         .top-lang a{color:#333;text-decoration:none;margin:0 8px;}
         .top-lang a.active{color:var(--blue);font-weight:bold;}
-
-        /* 導航 header */
         .header{border-bottom:1px solid #eee;}
         .container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
         .logo img{height:55px;}
         .nav a{text-decoration:none;color:#333;margin:0 15px;font-size:15px;}
         .nav a:hover{color:var(--blue);}
-
-        /* 首頁橫幅 */
         .banner{background:linear-gradient(rgba(0,51,102,0.85),rgba(0,51,102,0.85)),
         url(https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png);
         background-size:cover;background-position:center;color:#fff;text-align:center;padding:90px 20px;}
         .banner h1{font-size:36px;margin-bottom:12px;}
         .banner p{font-size:17px;opacity:0.9;}
-
         .wrap{max-width:1200px;margin:auto;padding:60px 20px;}
         h2{text-align:center;color:var(--main);font-size:28px;margin-bottom:40px;}
-
-        /* 公司介紹 */
         .about{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
-
-        /* 產品列表 */
         .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-bottom:60px;}
         .product-card{border:1px solid #eee;border-radius:8px;overflow:hidden;transition:0.3s;}
         .product-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px #00000015;}
         .product-card img{width:100%;height:200px;object-fit:cover;}
         .product-info{padding:20px;}
         .product-info h3{color:var(--main);margin-bottom:10px;}
-
-        /* 最新消息 */
         .news{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
         .news-item{padding:12px 0;border-bottom:1px solid #ddd;}
         .news-date{color:var(--blue);margin-right:10px;}
-
-        /* 留言聯絡 */
         .contact{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
         .row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:15px;}
         .contact input,.contact textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:4px;font-size:15px;}
@@ -55,21 +40,17 @@
         .contact button{background:var(--main);color:#fff;border:none;padding:12px 35px;border-radius:4px;cursor:pointer;font-size:16px;}
         .contact button:hover{background:var(--blue);}
         .contact-txt{margin-top:30px;text-align:center;line-height:2;}
-
-        /* 頁腳 */
         footer{background:var(--main);color:#fff;text-align:center;padding:25px 0;font-size:14px;}
     </style>
 </head>
 <body>
 
-<!-- 語言切換 -->
 <div class="top-lang">
     <a href="index.html" class="active">中文</a>
     <a href="en.html">English</a>
     <a href="jp.html">日本語</a>
 </div>
 
-<!-- 頭部導航 -->
 <div class="header">
     <div class="container">
         <div class="logo">
@@ -86,21 +67,18 @@
     </div>
 </div>
 
-<!-- 橫幅 -->
 <section class="banner" id="home">
     <h1>東莞長安帝恒五金模具配件廠</h1>
     <p>專業精密針規製造｜公差±0.001mm｜各材質非標訂製</p>
 </section>
 
 <div class="wrap">
-    <!-- 公司介紹 -->
     <section class="about" id="about">
         <h2>公司介紹</h2>
         <p>東莞長安帝恒五金模具配件廠，位於廣東省東莞市長安鎮，是專業研發、生產、銷售精密針規、模具配件的實力廠家。</p>
         <p style="margin-top:15px;">本廠專業生產：硬質合金針規、高速鋼針規、陶瓷針規、非標訂製針規，廣泛應用於模具、電子、塑膠、五金精密檢測行業。堅持高精度、高品質、交貨準時，支持來圖、來樣訂製，歡迎海內外客戶長期合作洽詢。</p>
     </section>
 
-    <!-- 產品中心 -->
     <section id="product">
         <h2>產品中心</h2>
         <div class="product-grid">
@@ -135,7 +113,6 @@
         </div>
     </section>
 
-    <!-- 最新消息 -->
     <section class="news" id="news">
         <h2>最新消息</h2>
         <div class="news-item">
@@ -148,7 +125,6 @@
         </div>
     </section>
 
-    <!-- 客戶留言 & 聯絡 -->
     <section class="contact" id="message">
         <h2>客戶留言</h2>
         <div class="row">
@@ -172,6 +148,18 @@
 <footer>
     © 2026 東莞長安帝恒五金模具配件廠 版權所有
 </footer>
+
+<!-- 在線自動客服 開始 -->
+<script src="https://cdn.jsdelivr.net/gh/justfly/tidio-lite/tidio-lite.js"></script>
+<script>
+new TidioLite({
+    welcomeMsg:"您好！歡迎諮詢精密針規報價、訂製及批發，請留下聯絡方式，我們盡快回覆您。",
+    placeholder:"請輸入您的問題、WhatsApp、郵箱...",
+    btnText:"在線客服",
+    color:"#003366"
+});
+</script>
+<!-- 在線自動客服 結束 -->
 
 </body>
 </html>
