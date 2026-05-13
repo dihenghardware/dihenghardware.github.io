@@ -3,21 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diheng Hardware | Precision Pin Gauge</title>
+    <title>Diheng Hardware | Precision Pin Gauge Manufacturer</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
         :root{--main:#003366;--blue:#0066cc;--gray:#f5f7fa;}
-        body{background:#fff;color:#333;line-height:1.7;position:relative;padding-bottom:80px;}
-        
-        .fixed-service{position:fixed;right:20px;bottom:20px;z-index:99999999;}
-        .service-btn{background:#003366;color:#fff;border:none;border-radius:50px;width:60px;height:60px;font-size:12px;cursor:pointer;box-shadow:0 4px 15px #00000030;display:flex;align-items:center;justify-content:center;}
-        .service-box{display:none;position:absolute;right:0;bottom:70px;width:300px;background:#fff;border-radius:10px;box-shadow:0 5px 20px #00000020;padding:20px;}
-        .service-box h4{margin-bottom:10px;color:#003366;}
-        .service-box p{font-size:14px;color:#666;margin-bottom:10px;}
-        .service-input{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;margin-bottom:10px;}
-        .service-submit{background:#003366;color:#fff;border:none;padding:10px;border-radius:6px;width:100%;cursor:pointer;}
-        .close-service{text-align:right;font-size:12px;color:#999;cursor:pointer;}
-
+        body{background:#fff;color:#333;line-height:1.7;}
         .top-lang{background:#f8f8f8;text-align:right;padding:10px 20px;font-size:14px;}
         .top-lang a{color:#333;text-decoration:none;margin:0 8px;}
         .top-lang a.active{color:var(--blue);font-weight:bold;}
@@ -25,60 +15,142 @@
         .container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
         .logo img{height:55px;}
         .nav a{text-decoration:none;color:#333;margin:0 15px;font-size:15px;}
+        .nav a:hover{color:var(--blue);}
         .banner{background:linear-gradient(rgba(0,51,102,0.85),rgba(0,51,102,0.85)),url(https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png);background-size:cover;background-position:center;color:#fff;text-align:center;padding:90px 20px;}
+        .banner h1{font-size:36px;margin-bottom:12px;}
+        .banner p{font-size:17px;opacity:0.9;}
         .wrap{max-width:1200px;margin:auto;padding:60px 20px;}
-        h2{text-align:center;color:var(--main);}
-        .about{background:var(--gray);padding:40px;border-radius:8px;}
-        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-        .product-card{border:1px solid #eee;border-radius:8px;overflow:hidden;}
+        h2{text-align:center;color:var(--main);font-size:28px;margin-bottom:40px;}
+        .about{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-bottom:60px;}
+        .product-card{border:1px solid #eee;border-radius:8px;overflow:hidden;transition:0.3s;}
+        .product-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px #00000015;}
         .product-card img{width:100%;height:200px;object-fit:cover;}
         .product-info{padding:20px;}
-        footer{background:var(--main);color:#fff;text-align:center;padding:25px 0;}
+        .product-info h3{color:var(--main);margin-bottom:10px;}
+        .news{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
+        .news-item{padding:12px 0;border-bottom:1px solid #ddd;}
+        .news-date{color:var(--blue);margin-right:10px;}
+        .contact{background:var(--gray);padding:40px;border-radius:8px;margin-bottom:60px;}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:15px;}
+        .contact input,.contact textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:4px;font-size:15px;}
+        .contact textarea{height:140px;resize:none;}
+        .contact button{background:var(--main);color:#fff;border:none;padding:12px 35px;border-radius:4px;cursor:pointer;font-size:16px;}
+        .contact button:hover{background:var(--blue);}
+        .contact-txt{margin-top:30px;text-align:center;line-height:2;}
+        footer{background:var(--main);color:#fff;text-align:center;padding:25px 0;font-size:14px;}
     </style>
 </head>
 <body>
-
 <div class="top-lang">
     <a href="index.html">中文</a>
     <a href="en.html" class="active">English</a>
     <a href="jp.html">日本語</a>
 </div>
-
 <div class="header">
     <div class="container">
-        <div class="logo"><img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/logo.png"></div>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/logo.png" alt="Diheng Logo">
+        </div>
         <div class="nav">
-            <a href="#home">Home</a><a href="#about">About</a><a href="#product">Products</a><a href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#product">Products</a>
+            <a href="#news">News</a>
+            <a href="#message">Inquiry</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 </div>
-
 <section class="banner" id="home">
-    <h1>Diheng Hardware Mold Accessories</h1>
-    <p>Precision Pin Gauge Manufacturer</p>
+    <h1>Diheng Hardware Mold Accessories Factory</h1>
+    <p>Professional Precision Pin Gauge | Tolerance ±0.001mm | Custom Service</p>
 </section>
-
 <div class="wrap">
-    <section class="about" id="about"><h2>About Us</h2><p>Professional pin gauge factory in Dongguan...</p></section>
-    <section id="product"><h2>Products</h2><div class="product-grid"><div class="product-card"><img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png"><div class="product-info"><h3>Carbide Pin Gauge</h3></div></div></div></section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Diheng Hardware is a professional manufacturer of precision pin gauges and mold parts, located in Chang'an Town, Dongguan, China.</p>
+        <p style="margin-top:15px;">We produce carbide pin gauges, HSS pin gauges, ceramic pin gauges and custom non-standard pin gauges, widely used in mold, electronics, plastic and hardware industries. High precision, stable quality and on-time delivery are our advantages.</p>
+    </section>
+    <section id="product">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png" alt="Carbide Pin Gauge">
+                <div class="product-info">
+                    <h3>Carbide Pin Gauge</h3>
+                    <p>High hardness, wear-resistant, tolerance ±0.001mm</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin002.png" alt="HSS Pin Gauge">
+                <div class="product-info">
+                    <h3>HSS Pin Gauge</h3>
+                    <p>Cost-effective, full standard sizes</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin003.png" alt="Ceramic Pin Gauge">
+                <div class="product-info">
+                    <h3>Ceramic Pin Gauge</h3>
+                    <p>Insulating, rust-proof, non-magnetic</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin004.png" alt="Custom Pin Gauge">
+                <div class="product-info">
+                    <h3>Custom Pin Gauge</h3>
+                    <p>Custom made by drawing or sample</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news" id="news">
+        <h2>Latest News</h2>
+        <div class="news-item">
+            <span class="news-date">2026-05-13</span>
+            We accept bulk orders of all pin gauge series, welcome long-term cooperation.
+        </div>
+        <div class="news-item">
+            <span class="news-date">2026-05-13</span>
+            Custom non-standard pin gauge service is now available.
+        </div>
+    </section>
+    <section class="contact" id="message">
+        <h2>Inquiry Form</h2>
+        <div class="row">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone / WhatsApp">
+        </div>
+        <textarea placeholder="Your inquiry about products, price or customization..."></textarea>
+        <div style="text-align:center;margin-top:20px;">
+            <button>Submit</button>
+        </div>
+        <div class="contact-txt" id="contact">
+            <p><strong>Address:</strong> Shop 2, Jinsha Building, Jinrong Road, Jinxia Henan Industrial Zone, Chang'an Town, Dongguan</p>
+            <p><strong>Email:</strong> dihenghardwaremoldparts@gmail.com</p>
+            <p><strong>Phone:</strong> +86 13532410868</p>
+        </div>
+    </section>
 </div>
+<footer>
+    © 2026 Diheng Hardware Mold Accessories Factory All Rights Reserved
+</footer>
 
-<footer>© 2026 Diheng Hardware All Rights Reserved</footer>
-
-<!-- STABLE LIVE CHAT -->
-<div class="fixed-service">
-    <div class="service-box" id="serviceBox">
-        <div class="close-service" onclick="toggleService()">Close ×</div>
-        <h4>Live Support</h4>
-        <p>Inquiry price, custom, wholesale</p>
-        <input class="service-input" placeholder="Name / Phone / WhatsApp">
-        <input class="service-input" placeholder="Your request">
-        <button class="service-submit" onclick="alert('Message sent! We will reply soon.')">Send</button>
-    </div>
-    <button class="service-btn" onclick="toggleService()">Live<br>Chat</button>
-</div>
-
-<script>function toggleService(){var b=document.getElementById("serviceBox");b.style.display=b.style.display=="block"?"none":"block";}</script>
+<!-- Tawk.to Live Chat -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a047f812df0a01c36f9d5f2/1jogp44e7';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
