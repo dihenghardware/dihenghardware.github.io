@@ -1,2 +1,134 @@
-# dihenghardware.github.io
-我的第一个 GitHub Pages 网站！
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东莞市长安帝恒五金模具配件加工厂 - 针规专业生产</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .product-item h3 {
+            color: #2980b9;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            list-style: none;
+        }
+        .contact-info li {
+            margin: 0.8rem 0;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>东莞市长安帝恒五金模具配件加工厂</h1>
+        <p>专注生产高品质、多材质针规 | 精密制造，品质保证</p>
+    </header>
+
+    <div class="container">
+        <!-- 公司介绍 -->
+        <div class="section">
+            <h2>关于我们</h2>
+            <p>东莞市长安帝恒五金模具配件加工厂，位于东莞长安镇，是一家专业生产各类精密针规的实体工厂。我们拥有多年生产经验，专注于为模具、电子、五金等行业客户提供高精度、不同材质的针规产品，支持定制与批量生产。</p>
+        </div>
+
+        <!-- 主营产品 -->
+        <div class="section">
+            <h2>主营产品：不同材质针规</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <h3>硬质合金针规</h3>
+                    <p>高硬度、高耐磨，适用于高频率检测场景</p>
+                </div>
+                <div class="product-item">
+                    <h3>高速钢针规</h3>
+                    <p>性价比高，通用性强，常规尺寸齐全</p>
+                </div>
+                <div class="product-item">
+                    <h3>陶瓷针规</h3>
+                    <p>绝缘、防锈、无磁，适用于特殊检测环境</p>
+                </div>
+                <div class="product-item">
+                    <h3>定制非标针规</h3>
+                    <p>按图纸定制特殊规格、公差的针规产品</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="section">
+            <h2>联系我们</h2>
+            <ul class="contact-info">
+                <li>📍 地址：广东省东莞市长安镇錦廈社區河南工業區錦榮路4號蓮花大廈2號舖位</li>
+                <li>📞 电话：（13532410868）</li>
+                <li>💬 WhatsApp / 微信：（winnienini_）</li>
+                <li>⏰ 营业时间：周一至周六 8:00 - 18:00</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 东莞市长安帝恒五金模具配件加工厂 | 版权所有</p>
+    </footer>
+</body>
+</html>
