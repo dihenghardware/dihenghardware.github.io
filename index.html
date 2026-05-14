@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帝恒五金模具配件廠｜精密針規專業製造</title>
+    <title>帝恒五金模具配件廠｜精密針規｜精密軸類｜模具精密配件</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft YaHei",Arial,sans-serif;scroll-behavior:smooth;}
         :root{
@@ -24,7 +24,7 @@
         .container{width:90%;max-width:1250px;margin:auto;}
         .nav-wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 0;}
         .logo img{height:60px;}
-        .nav-menu a{text-decoration:none;color:#333;font-size:15px;margin:0 12px;}
+        .nav-menu a{text-decoration:none;color:#333;font-size:15px;margin:0 10px;}
         .nav-menu a:hover{color:var(--blue);}
 
         /* 首頁輪播 */
@@ -49,20 +49,33 @@
         .about-text p{margin-bottom:16px;font-size:15px;}
         .about-img img{width:100%;border-radius:8px;box-shadow:0 5px 20px #00000015;}
 
-        /* 產品展示 多圖 */
-        .product-grid{
+        /* 產品分類樣式 */
+        .cate-item{
+            background:#fff;
+            border-radius:8px;
+            box-shadow:0 3px 12px rgba(0,0,0,0.08);
+            padding:30px;
+            margin-bottom:30px;
+        }
+        .cate-item h3{
+            color:var(--main);
+            font-size:20px;
+            margin-bottom:15px;
+            padding-bottom:10px;
+            border-bottom:1px solid #eee;
+        }
+        .cate-list{
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:25px;
+            gap:12px;
         }
-        .product-card{
-            background:#fff;border-radius:8px;overflow:hidden;
-            box-shadow:0 3px 12px #00000010;transition:0.3s;
+        .cate-list span{
+            display:block;
+            background:var(--gray);
+            padding:8px 12px;
+            border-radius:4px;
+            font-size:14px;
         }
-        .product-card:hover{transform:translateY(-6px);}
-        .product-img{height:180px;overflow:hidden;}
-        .product-img img{width:100%;height:100%;object-fit:cover;}
-        .product-name{padding:15px;text-align:center;font-weight:500;color:var(--main);}
 
         /* 影片專區 */
         .video-bg{background:var(--gray);}
@@ -71,7 +84,7 @@
 
         /* 優勢 */
         .adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;}
-        .adv-item{background:#fff;padding:30px;text-align:center;border-radius:8px;box-shadow:0 3px 10px #00000008;}
+        .adv-item{background:#fff;padding:30px;text-align:center;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,0.08);}
         .adv-item h4{color:var(--main);margin:12px 0;}
 
         /* 聯絡 */
@@ -102,7 +115,7 @@
             <a href="#about">公司簡介</a>
             <a href="#product">產品中心</a>
             <a href="#video">工廠影片</a>
-            <a href="#advantage">實力優勢</a>
+            <a href="#advantage">工廠優勢</a>
             <a href="#contact">聯絡我們</a>
         </div>
     </div>
@@ -111,7 +124,7 @@
 <!-- 首頁大橫幅 -->
 <section class="banner" id="home">
     <h1>東莞長安帝恒五金模具配件廠</h1>
-    <p>專業精密針規製造｜硬質合金／高速鋼／陶瓷／非標訂製｜精度 ±0.001mm 專業廠家</p>
+    <p>精密針規｜模具配件｜精密軸類｜套管襯套｜非標緊固件｜電子精密五金｜氣動精密配件</p>
 </section>
 
 <!-- 公司介紹 -->
@@ -123,88 +136,107 @@
         </div>
         <div class="about-row">
             <div class="about-text">
-                <p>帝恒五金模具配件廠位於中國模具重鎮 — 東莞長安鎮，是一間專業研發、生產、銷售各類精密針規、精密檢測治具、模具配件的實力製造廠商。</p>
-                <p>工廠引進德國、日本高精度內外圓磨床、精密切割機、全自動研磨設備，專業生產<strong>硬質合金針規、高速鋼針規、陶瓷針規、階梯針規、非標特注針規</strong>等全系列產品。</p>
-                <p>產品精度穩定控制在 <strong>±0.001mm</strong>，材質硬度高、耐磨防鏽、不變形，廣泛應用於：模具製造、電子組裝、塑膠殼體、汽車配件、精密五金、光電行業等尺寸檢測領域。</p>
-                <p>我司可接受客戶圖紙、樣品<strong>量身訂製特殊規格、特殊公差、特殊形狀針規</strong>，標準規格大量現貨，訂單交貨穩定，歡迎全球貿易商、工廠長期合作。</p>
+                <p>帝恒五金模具配件廠位於中國模具重鎮 — 東莞長安鎮，專業研發、生產、銷售各類精密針規、模具配件、精密軸類、車削套管、非標緊固件、電子小家電精密五金、氣動小型精密配件。</p>
+                <p>工廠引進德國、日本高精度研磨、車削、精密加工設備，專業承接標準件及來圖來樣<strong>非標定制</strong>，精度可達±0.001mm，材質耐磨、高硬度、不變形。</p>
+                <p>產品廣泛應用於模具製造、電子3C、小家電、汽車配件、光電、氣動元件、自動化設備等行業，標準規格現貨充足，非標訂單快速交貨，歡迎海內外客戶長期合作洽談。</p>
             </div>
             <div class="about-img">
-                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png">
+                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png" alt="工廠實力">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 產品中心 超多產品圖 -->
+<!-- 產品中心 7大分類完整展示 -->
 <section class="section" id="product">
     <div class="container">
         <div class="title">
-            <h2>產品中心</h2>
+            <h2>產品中心｜七大系列完整分類</h2>
             <div class="title-line"></div>
         </div>
-        <div class="product-grid">
 
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png">
-                </div>
-                <div class="product-name">硬質合金針規</div>
+        <!-- 1 精密針規/量規系列 -->
+        <div class="cate-item">
+            <h3>一級分類1：精密針規／量規系列</h3>
+            <div class="cate-list">
+                <span>鎢鋼針規、合金針規</span>
+                <span>精密塞規、環規</span>
+                <span>間隙規、檢測銷規</span>
+                <span>定制非標針規、異形量規</span>
             </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin002.png">
-                </div>
-                <div class="product-name">高速鋼精密針規</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin003.png">
-                </div>
-                <div class="product-name">陶瓷絕緣針規</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin004.png">
-                </div>
-                <div class="product-name">非標特注針規</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png">
-                </div>
-                <div class="product-name">階梯兩段針規</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin002.png">
-                </div>
-                <div class="product-name">精密塞規套裝</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin003.png">
-                </div>
-                <div class="product-name">光面精密圓棒</div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin004.png">
-                </div>
-                <div class="product-name">檢測治具配件</div>
-            </div>
-
         </div>
+
+        <!-- 2 模具精密配件系列 -->
+        <div class="cate-item">
+            <h3>一級分類2：模具精密配件系列</h3>
+            <div class="cate-list">
+                <span>模具頂針、托針、扁頂針</span>
+                <span>司筒、頂管、空心針</span>
+                <span>模具定位銷、圓柱銷、導向銷</span>
+                <span>模具鑲件、鑲塊、止擋塊</span>
+                <span>精密墊片、間隔片、耐磨塊</span>
+            </div>
+        </div>
+
+        <!-- 3 精密軸類/銷軸類 -->
+        <div class="cate-item">
+            <h3>一級分類3：精密軸類／銷軸類</h3>
+            <div class="cate-list">
+                <span>微型傳動軸、馬達軸</span>
+                <span>導向軸、滾針、實心軸</span>
+                <span>台階軸、偏心軸、非標異形軸</span>
+                <span>固定銷、連接銷、插銷</span>
+            </div>
+        </div>
+
+        <!-- 4 車削精密套管/襯套系列 -->
+        <div class="cate-item">
+            <h3>一級分類4：車削精密套管／襯套系列</h3>
+            <div class="cate-list">
+                <span>精密套管、空心套管</span>
+                <span>內牙螺紋套、連接套</span>
+                <span>軸套、耐磨襯套、隔離套</span>
+                <span>非標車削圓套、異形套</span>
+            </div>
+        </div>
+
+        <!-- 5 非標緊固件/連接柱系列 -->
+        <div class="cate-item">
+            <h3>一級分類5：非標緊固件／連接柱系列</h3>
+            <div class="cate-list">
+                <span>非標台階螺絲、異形螺絲</span>
+                <span>六角隔離柱、銅柱、鐵柱</span>
+                <span>細牙螺母、圓螺母、定位螺母</span>
+                <span>螺柱、焊接柱、接地柱</span>
+            </div>
+        </div>
+
+        <!-- 6 電子小家電精密五金 -->
+        <div class="cate-item">
+            <h3>一級分類6：電子小家電精密五金</h3>
+            <div class="cate-list">
+                <span>3C鏡頭壓圈、固定鎖圈</span>
+                <span>攝像機小型支架、固定五金</span>
+                <span>導電銅件、端子連接片</span>
+                <span>小家電卡扣、小折彎五金件</span>
+            </div>
+        </div>
+
+        <!-- 7 氣動小型精密配件 -->
+        <div class="cate-item">
+            <h3>一級分類7：氣動小型精密配件</h3>
+            <div class="cate-list">
+                <span>氣動閥芯、閥套</span>
+                <span>小型氣動接頭本體</span>
+                <span>活塞小軸、密封定位柱</span>
+                <span>氣動精密連接五金件</span>
+            </div>
+        </div>
+
     </div>
 </section>
 
-<!-- 工廠影片專區（以後你直接貼影片連結就可以播放） -->
+<!-- 工廠影片專區 -->
 <section class="section video-bg" id="video">
     <div class="container">
         <div class="title">
@@ -212,9 +244,8 @@
             <div class="title-line"></div>
         </div>
         <div class="video-box">
-            <!-- 以後有影片，直接替換 src 裡的連結即可 -->
             <iframe src="" allowfullscreen></iframe>
-            <p style="margin-top:15px;color:#666;">歡迎提供工廠影片、產品展示影片，我可幫你直接放入網站自動播放</p>
+            <p style="margin-top:15px;color:#666;">後續可上架工廠生產、產品展示影片</p>
         </div>
     </div>
 </section>
@@ -229,27 +260,27 @@
         <div class="adv-grid">
             <div class="adv-item">
                 <h4>高精度設備</h4>
-                <p>進口精密研磨機，公差穩定 ±0.001mm</p>
+                <p>進口精密車削研磨設備，公差穩定 ±0.001mm</p>
             </div>
             <div class="adv-item">
-                <h4>全材質生產</h4>
-                <p>合金／高速鋼／陶瓷 均可生產</p>
+                <h4>全系列產品</h4>
+                <p>七大產品系列，一站式採購</p>
             </div>
             <div class="adv-item">
-                <h4>非標可訂製</h4>
-                <p>圖紙、樣品均可開發生產</p>
+                <h4>非標專業定制</h4>
+                <p>來圖來樣開發，各種異形件均可生產</p>
             </div>
             <div class="adv-item">
                 <h4>現貨庫存充足</h4>
                 <p>標準規格大量現貨，快速出貨</p>
             </div>
             <div class="adv-item">
-                <h4>品檢嚴格把關</h4>
-                <p>每件出貨全檢，穩定品質</p>
+                <h4>嚴格品質檢測</h4>
+                <p>每款產品全檢出貨，品質穩定</p>
             </div>
             <div class="adv-item">
                 <h4>外貿專業服務</h4>
-                <p>支援多國語言報價、出口報關</p>
+                <p>支援多國報價、出口訂單配合</p>
             </div>
         </div>
     </div>
@@ -273,11 +304,10 @@
 
 <!-- 頁腳 -->
 <footer>
-    © 2026 帝恒五金模具配件廠 版權所有｜精密針規專業製造廠
+    © 2026 帝恒五金模具配件廠 版權所有｜精密五金專業製造廠
 </footer>
 
 <!-- Tawk.to 在線實時對話客服 -->
-<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -289,7 +319,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
 
 </body>
 </html>
