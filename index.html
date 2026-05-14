@@ -19,7 +19,7 @@
         .top-bar a{color:#333;text-decoration:none;margin:0 10px;}
         .top-bar a.active{color:var(--blue);font-weight:bold;}
 
-        /* 導航列 */
+        /* 導航 */
         .header{background:#fff;box-shadow:0 2px 8px #00000010;position:sticky;top:0;z-index:999;}
         .container{width:90%;max-width:1250px;margin:auto;}
         .nav-wrap{display:flex;justify-content:space-between;align-items:center;padding:15px 0;}
@@ -27,17 +27,16 @@
         .nav-menu a{text-decoration:none;color:#333;font-size:15px;margin:0 10px;}
         .nav-menu a:hover{color:var(--blue);}
 
-        /* 首頁輪播 */
+        /* 首頁橫幅 */
         .banner{
-            background:linear-gradient(rgba(0,43,92,0.85),rgba(0,43,92,0.85)),
-            url("https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png");
+            background:linear-gradient(rgba(0,43,92,0.85),rgba(0,43,92,0.85)),url(CL001.png);
             background-size:cover;background-position:center;
             color:#fff;text-align:center;padding:130px 20px;
         }
         .banner h1{font-size:40px;margin-bottom:15px;}
         .banner p{font-size:18px;opacity:0.9;max-width:900px;margin:auto;}
 
-        /* 通用區塊 */
+        /* 通用 */
         .section{padding:70px 0;}
         .title{text-align:center;margin-bottom:50px;}
         .title h2{font-size:32px;color:var(--main);margin-bottom:10px;}
@@ -45,60 +44,23 @@
 
         /* 公司介紹 */
         .about-bg{background:var(--gray);}
-        .about-row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+        .about-row{display:grid;grid-template-columns:1fr 1;gap:40px;align-items:center;}
         .about-text p{margin-bottom:16px;font-size:15px;}
         .about-img img{width:100%;border-radius:8px;box-shadow:0 5px 20px #00000015;}
 
         /* 產品分類樣式 */
         .cate-item{
-            background:#fff;
-            border-radius:8px;
-            box-shadow:0 3px 12px rgba(0,0,0,0.08);
-            padding:30px;
-            margin-bottom:30px;
-            display:flex;
-            align-items:center;
-            gap:25px;
+            background:#fff;border-radius:8px;box-shadow:0 3px 12px rgba(0,0,0,0.08);
+            padding:30px;margin-bottom:30px;display:flex;align-items:center;gap:25px;
         }
-        .cate-img{
-            width:160px;
-            height:160px;
-            flex-shrink:0;
-        }
-        .cate-img img{
-            width:100%;
-            height:100%;
-            object-fit:cover;
-            border-radius:6px;
-            /* 強制圖片顯示 */
-            display:block;
-            min-height:160px;
-            background:#f0f0f0;
-        }
-        .cate-content{
-            flex:1;
-        }
-        .cate-item h3{
-            color:var(--main);
-            font-size:20px;
-            margin-bottom:15px;
-            padding-bottom:10px;
-            border-bottom:1px solid #eee;
-        }
-        .cate-list{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:12px;
-        }
-        .cate-list span{
-            display:block;
-            background:var(--gray);
-            padding:8px 12px;
-            border-radius:4px;
-            font-size:14px;
-        }
+        .cate-img{width:160px;height:160px;flex-shrink:0;}
+        .cate-img img{width:100%;height:100%;object-fit:cover;border-radius:6px;display:block;}
+        .cate-content{flex:1;}
+        .cate-item h3{color:var(--main);font-size:20px;margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid #eee;}
+        .cate-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+        .cate-list span{display:block;background:var(--gray);padding:8px 12px;border-radius:4px;font-size:14px;}
 
-        /* 影片專區 */
+        /* 影片 */
         .video-bg{background:var(--gray);}
         .video-box{max-width:800px;margin:auto;text-align:center;}
         .video-box iframe{width:100%;height:420px;border-radius:8px;border:none;}
@@ -116,20 +78,21 @@
         footer{background:var(--dark);color:#aaa;text-align:center;padding:25px 0;font-size:14px;}
     </style>
 </head>
+
 <body>
 
-<!-- 語言切換 -->
+<!-- 語言 -->
 <div class="top-bar">
     <a href="index.html" class="active">繁體中文</a>
     <a href="en.html">English</a>
     <a href="jp.html">日本語</a>
 </div>
 
-<!-- 導航 -->
+<!-- 導航 + LOGO -->
 <div class="header">
     <div class="container nav-wrap">
         <div class="logo">
-            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png" alt="帝恒五金LOGO">
+            <img src="logo.png" alt="帝恒五金LOGO"> <!-- 這裡是 LOGO -->
         </div>
         <div class="nav-menu">
             <a href="#home">首頁</a>
@@ -142,7 +105,7 @@
     </div>
 </div>
 
-<!-- 首頁大橫幅 -->
+<!-- 首頁 -->
 <section class="banner" id="home">
     <h1>東莞長安帝恒五金模具配件廠</h1>
     <p>精密針規｜模具配件｜精密軸類｜套管襯套｜非標緊固件｜電子精密五金｜氣動精密配件</p>
@@ -162,13 +125,13 @@
                 <p>產品廣泛應用於模具製造、電子3C、小家電、汽車配件、光電、氣動元件、自動化設備等行業，標準規格現貨充足，非標訂單快速交貨，歡迎海內外客戶長期合作洽談。</p>
             </div>
             <div class="about-img">
-                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png" alt="工廠實力">
+                <img src="CL001.png" alt="工廠實力">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 產品中心 7大分類 + 可直接顯示的圖片 -->
+<!-- 產品中心 7大分類 + CL001~CL007 -->
 <section class="section" id="product">
     <div class="container">
         <div class="title">
@@ -176,11 +139,8 @@
             <div class="title-line"></div>
         </div>
 
-        <!-- 1 精密針規/量規系列 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png" alt="精密針規/量規系列">
-            </div>
+            <div class="cate-img"><img src="CL001.png" alt="精密針規"></div>
             <div class="cate-content">
                 <h3>一級分類1：精密針規／量規系列</h3>
                 <div class="cate-list">
@@ -192,11 +152,8 @@
             </div>
         </div>
 
-        <!-- 2 模具精密配件系列 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/cb8ec7ed8acc4165b489f25b277fd7fb.png~tplv-a9rns2rl98-image.png" alt="模具精密配件系列">
-            </div>
+            <div class="cate-img"><img src="CL002.png" alt="模具精密配件"></div>
             <div class="cate-content">
                 <h3>一級分類2：模具精密配件系列</h3>
                 <div class="cate-list">
@@ -209,11 +166,8 @@
             </div>
         </div>
 
-        <!-- 3 精密軸類/銷軸類 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/a2046ed5fc4248b2a46ddcb8b209c9d2.png~tplv-a9rns2rl98-image.png" alt="精密軸類/銷軸類">
-            </div>
+            <div class="cate-img"><img src="CL003.png" alt="精密軸類"></div>
             <div class="cate-content">
                 <h3>一級分類3：精密軸類／銷軸類</h3>
                 <div class="cate-list">
@@ -225,11 +179,8 @@
             </div>
         </div>
 
-        <!-- 4 車削精密套管/襯套系列 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png" alt="車削精密套管/襯套系列">
-            </div>
+            <div class="cate-img"><img src="CL004.png" alt="車削套管"></div>
             <div class="cate-content">
                 <h3>一級分類4：車削精密套管／襯套系列</h3>
                 <div class="cate-list">
@@ -241,11 +192,8 @@
             </div>
         </div>
 
-        <!-- 5 非標緊固件/連接柱系列 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p6-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/cb8ec7ed8acc4165b489f25b277fd7fb.png~tplv-a9rns2rl98-image.png" alt="非標緊固件/連接柱系列">
-            </div>
+            <div class="cate-img"><img src="CL005.png" alt="非標緊固件"></div>
             <div class="cate-content">
                 <h3>一級分類5：非標緊固件／連接柱系列</h3>
                 <div class="cate-list">
@@ -257,11 +205,8 @@
             </div>
         </div>
 
-        <!-- 6 電子小家電精密五金 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/a2046ed5fc4248b2a46ddcb8b209c9d2.png~tplv-a9rns2rl98-image.png" alt="電子小家電精密五金">
-            </div>
+            <div class="cate-img"><img src="CL006.png" alt="電子五金"></div>
             <div class="cate-content">
                 <h3>一級分類6：電子小家電精密五金</h3>
                 <div class="cate-list">
@@ -273,11 +218,8 @@
             </div>
         </div>
 
-        <!-- 7 氣動小型精密配件 -->
         <div class="cate-item">
-            <div class="cate-img">
-                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/0fda33679d4e4c7cb9a730824e071971.png~tplv-a9rns2rl98-image.png" alt="氣動小型精密配件">
-            </div>
+            <div class="cate-img"><img src="CL007.png" alt="氣動配件"></div>
             <div class="cate-content">
                 <h3>一級分類7：氣動小型精密配件</h3>
                 <div class="cate-list">
@@ -292,7 +234,7 @@
     </div>
 </section>
 
-<!-- 工廠影片專區 -->
+<!-- 影片 -->
 <section class="section video-bg" id="video">
     <div class="container">
         <div class="title">
@@ -306,7 +248,7 @@
     </div>
 </section>
 
-<!-- 實力優勢 -->
+<!-- 優勢 -->
 <section class="section" id="advantage">
     <div class="container">
         <div class="title">
@@ -342,7 +284,7 @@
     </div>
 </section>
 
-<!-- 聯絡我們 -->
+<!-- 聯絡 -->
 <section class="section contact-bg" id="contact">
     <div class="container">
         <div class="title">
@@ -363,7 +305,7 @@
     © 2026 帝恒五金模具配件廠 版權所有｜精密五金專業製造廠
 </footer>
 
-<!-- Tawk.to 在線實時對話客服 -->
+<!-- 客服 -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
