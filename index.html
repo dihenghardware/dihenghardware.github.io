@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帝恒五金模具配件廠｜精密針規｜精密軸類｜模具精密配件</title>
+    <title>帝恒五金｜針規專家｜精密針規 非標量規 模具配件</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;scroll-behavior:smooth;}
         :root{
@@ -14,43 +14,20 @@
         }
         body{color:var(--dark);background:#fff;line-height:1.7;}
 
-        /* 顶部语言 */
         .top-bar{background:var(--light);padding:10px 5%;text-align:right;font-size:14px;}
         .top-bar a{color:#555;text-decoration:none;margin:0 10px;}
         .top-bar a.active{color:var(--primary);font-weight:bold;}
 
-        /* 导航 + LOGO 超大版 */
-        .header{
-            background:#fff;
-            border-bottom:1px solid var(--border);
-            position:sticky;top:0;z-index:999;
-        }
+        .header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:999;}
         .container{width:90%;max-width:1300px;margin:auto;}
-        .nav-wrap{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:22px 0;
-        }
+        .nav-wrap{display:flex;justify-content:space-between;align-items:center;padding:22px 0;}
         .logo{display:flex;align-items:center;gap:18px;}
-        .logo img{height:70px;} /* LOGO 放大 */
-        .logo-text h2{
-            font-size:24px;
-            font-weight:700;
-            color:var(--primary);
-            letter-spacing:1px;
-        }
+        .logo img{height:70px;}
+        .logo-text h2{font-size:24px;font-weight:700;color:var(--primary);letter-spacing:1px;}
         .logo-text p{font-size:13px;color:#666;margin-top:-2px;}
-        .nav-menu a{
-            text-decoration:none;
-            color:var(--dark);
-            font-size:16px;
-            margin:0 14px;
-            font-weight:500;
-        }
+        .nav-menu a{text-decoration:none;color:var(--dark);font-size:16px;margin:0 14px;font-weight:500;}
         .nav-menu a:hover{color:var(--primary);}
 
-        /* Banner 大气 */
         .banner{
             background:linear-gradient(rgba(13,59,139,0.5),rgba(13,59,139,0.6)),url(CL001.png);
             background-size:cover;background-position:center;
@@ -59,32 +36,18 @@
         .banner h1{font-size:42px;font-weight:700;margin-bottom:15px;}
         .banner p{font-size:19px;max-width:850px;margin:auto;opacity:0.95;}
 
-        /* 通用 */
         .section{padding:70px 0;}
         .title{text-align:center;margin-bottom:50px;}
         .title h2{font-size:30px;font-weight:700;color:var(--dark);margin-bottom:12px;}
         .title-line{width:70px;height:3px;background:var(--primary);margin:auto;}
 
-        /* 公司介绍 */
         .about-bg{background:var(--light);}
         .about-row{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;}
         .about-text p{font-size:16px;margin-bottom:16px;}
         .about-img img{width:100%;border-radius:6px;border:1px solid var(--border);}
 
-        /* 产品卡片（高级感） */
-        .product-grid{
-            display:grid;
-            grid-template-columns:repeat(3,1fr);
-            gap:30px;
-        }
-        .prod-card{
-            background:#fff;
-            border:1px solid var(--border);
-            border-radius:6px;
-            padding:30px;
-            text-align:center;
-            transition:0.3s;
-        }
+        .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+        .prod-card{background:#fff;border:1px solid var(--border);border-radius:6px;padding:30px;text-align:center;transition:0.3s;}
         .prod-card:hover{transform:translateY(-5px);}
         .prod-img{width:150px;height:150px;margin:auto;margin-bottom:20px;}
         .prod-img img{width:100%;height:100%;object-fit:cover;border-radius:6px;}
@@ -92,26 +55,21 @@
         .prod-list{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;}
         .prod-list span{background:var(--light);padding:7px 12px;border-radius:4px;font-size:14px;}
 
-        /* 视频 */
         .video-bg{background:var(--light);}
         .video-box{max-width:850px;margin:auto;text-align:center;}
         .video-box iframe{width:100%;height:450px;border:none;border-radius:6px;}
         .video-box p{margin-top:15px;color:#666;font-size:15px;}
 
-        /* 优势 */
         .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
         .adv-item{background:#fff;border:1px solid var(--border);border-radius:6px;padding:35px 25px;text-align:center;}
         .adv-item h4{font-size:18px;font-weight:600;margin-bottom:10px;}
         .adv-item p{font-size:15px;color:#555;}
 
-        /* 联系 */
         .contact-bg{background:var(--primary);color:#fff;}
         .contact-info{text-align:center;line-height:2.3;font-size:16px;}
 
-        /* 页脚 */
         footer{background:#111;color:#888;text-align:center;padding:28px 0;font-size:14px;}
 
-        /* 手机自适应 */
         @media(max-width:992px){
             .product-grid,.adv-grid{grid-template-columns:repeat(2,1fr);}
         }
@@ -123,27 +81,22 @@
         }
     </style>
 </head>
-
 <body>
-
-<!-- 语言 -->
 <div class="top-bar">
     <a href="index.html" class="active">繁體中文</a>
     <a href="en.html">English</a>
     <a href="jp.html">日本語</a>
 </div>
 
-<!-- 导航 + LOGO + 公司名 -->
 <div class="header">
     <div class="container nav-wrap">
         <div class="logo">
             <img src="logo.png" alt="帝恒五金">
             <div class="logo-text">
                 <h2>帝恒五金模具配件廠</h2>
-                <p>精密五金 · 專業制造</p>
+                <p>針規專家 · 精密量規專業製造</p>
             </div>
         </div>
-
         <div class="nav-menu">
             <a href="#home">首頁</a>
             <a href="#about">公司簡介</a>
@@ -155,13 +108,11 @@
     </div>
 </div>
 
-<!-- 首頁 -->
 <section class="banner" id="home">
-    <h1>東莞長安帝恒五金模具配件廠</h1>
-    <p>精密針規｜模具配件｜精密軸類｜套管襯套｜非標緊固件｜電子精密五金｜氣動精密配件</p>
+    <h1>針規專家 · 東莞帝恒五金</h1>
+    <p>精密針規｜鎢鋼針規｜塞規環規｜非標量規定制｜模具精密配件</p>
 </section>
 
-<!-- 公司介紹 -->
 <section class="section about-bg" id="about">
     <div class="container">
         <div class="title">
@@ -170,34 +121,31 @@
         </div>
         <div class="about-row">
             <div class="about-text">
-                <p>帝恒五金模具配件廠位於中國模具重鎮 — 東莞長安鎮，專業研發、生產、銷售各類精密針規、模具配件、精密軸類、車削套管、非標緊固件、電子小家電精密五金、氣動小型精密配件。</p>
-                <p>工廠引進德國、日本高精度研磨、車削、精密加工設備，專業承接標準件及來圖來樣<strong>非標定制</strong>，精度可達±0.001mm，材質耐磨、高硬度、不變形。</p>
-                <p>產品廣泛應用於模具製造、電子3C、小家電、汽車配件、光電、氣動元件、自動化設備等行業，標準規格現貨充足，非標訂單快速交貨，歡迎海內外客戶長期合作洽談。</p>
+                <p>帝恒五金為專業<strong>針規專家</strong>，深耕精密針規、鎢鋼針規、塞規環規、間隙規研發與生產，位於中國模具重鎮東莞長安鎮。</p>
+                <p>引進德國、日本高精度研磨設備，針規公差可達 ±0.001mm，高硬度、耐磨损、不變形，支持標準現貨與來圖來樣非標定制。</p>
+                <p>身為業內針規專家，產品銷售北美、歐洲、日本等市場，廣泛用於模具、電子3C、汽車配件、自動化設備行業，歡迎海外客戶長期合作。</p>
             </div>
             <div class="about-img">
-                <img src="CL001.png" alt="工廠實力">
+                <img src="CL001.png" alt="針規專家 工廠實力">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 產品中心 -->
 <section class="section" id="product">
     <div class="container">
         <div class="title">
-            <h2>產品中心｜七大系列完整分類</h2>
+            <h2>產品中心｜針規為核心 七大系列</h2>
             <div class="title-line"></div>
         </div>
-
         <div class="product-grid">
             <div class="prod-card">
                 <div class="prod-img"><img src="CL001.png" alt="精密針規"></div>
-                <h3>精密針規／量規系列</h3>
+                <h3>精密針規／量規系列【核心主力】</h3>
                 <div class="prod-list">
-                    <span>鎢鋼針規</span><span>塞規環規</span><span>間隙規</span><span>非標定制</span>
+                    <span>鎢鋼針規</span><span>塞規環規</span><span>間隙規</span><span>非標定制量規</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL002.png" alt="模具精密配件"></div>
                 <h3>模具精密配件系列</h3>
@@ -205,7 +153,6 @@
                     <span>頂針司筒</span><span>定位銷</span><span>模具鑲件</span><span>精密墊片</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL003.png" alt="精密軸類"></div>
                 <h3>精密軸類／銷軸類</h3>
@@ -213,7 +160,6 @@
                     <span>傳動馬達軸</span><span>導向滾針</span><span>台階偏心軸</span><span>連接固定銷</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL004.png" alt="車削套管"></div>
                 <h3>精密套管／襯套系列</h3>
@@ -221,7 +167,6 @@
                     <span>空心套管</span><span>螺紋連接套</span><span>耐磨軸套</span><span>非標異形套</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL005.png" alt="非標緊固件"></div>
                 <h3>非標緊固件／連接柱</h3>
@@ -229,7 +174,6 @@
                     <span>異形螺絲</span><span>隔離銅柱</span><span>定位螺母</span><span>焊接接地柱</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL006.png" alt="電子五金"></div>
                 <h3>電子小家電精密五金</h3>
@@ -237,7 +181,6 @@
                     <span>鏡頭壓圈</span><span>固定支架</span><span>導電銅件</span><span>折彎卡扣件</span>
                 </div>
             </div>
-
             <div class="prod-card">
                 <div class="prod-img"><img src="CL007.png" alt="氣動配件"></div>
                 <h3>氣動小型精密配件</h3>
@@ -249,43 +192,40 @@
     </div>
 </section>
 
-<!-- 工廠影片 -->
 <section class="section video-bg" id="video">
     <div class="container">
         <div class="title">
-            <h2>工廠實況 / 產品影片</h2>
+            <h2>工廠實況 / 針規生產影片</h2>
             <div class="title-line"></div>
         </div>
         <div class="video-box">
             <iframe src="" allowfullscreen></iframe>
-            <p>後續可上架工廠生產、產品展示影片</p>
+            <p>後續可上架針規生產、工廠實況展示影片</p>
         </div>
     </div>
 </section>
 
-<!-- 工廠優勢 -->
 <section class="section" id="advantage">
     <div class="container">
         <div class="title">
-            <h2>工廠實力優勢</h2>
+            <h2>針規專家 · 核心優勢</h2>
             <div class="title-line"></div>
         </div>
         <div class="adv-grid">
-            <div class="adv-item"><h4>高精度設備</h4><p>進口精密車削研磨，公差穩定 ±0.001mm</p></div>
-            <div class="adv-item"><h4>全系列產品</h4><p>七大產品分類，一站式採購</p></div>
-            <div class="adv-item"><h4>非標定制服務</h4><p>來圖來樣開發，異形件均可生產</p></div>
-            <div class="adv-item"><h4>現貨快速出貨</h4><p>標準規格庫存充足，交期穩定</p></div>
-            <div class="adv-item"><h4>專業品控檢測</h4><p>全檢出貨，品質長期穩定</p></div>
-            <div class="adv-item"><h4>外貿訂單支援</h4><p>适配北美訂單報價與出口流程</p></div>
+            <div class="adv-item"><h4>針規專業製造</h4><p>專注針規量規多年，業內專家級工廠</p></div>
+            <div class="adv-item"><h4>超高精度公差</h4><p>針規穩定 ±0.001mm，北美品質標準</p></div>
+            <div class="adv-item"><h4>非標量身定制</h4><p>圖面樣品均可開發各類特殊針規</p></div>
+            <div class="adv-item"><h4>現貨充足快速出貨</h4><p>標準針規大量庫存，交期穩定</p></div>
+            <div class="adv-item"><h4>嚴格品質檢測</h4><p>每支針規全檢出貨，品質可控</p></div>
+            <div class="adv-item"><h4>外貿北美專供</h4><p>熟悉北美市場規格與出口流程</p></div>
         </div>
     </div>
 </section>
 
-<!-- 聯絡我們 -->
 <section class="section contact-bg" id="contact">
     <div class="container">
         <div class="title">
-            <h2>聯絡我們</h2>
+            <h2>聯絡我們｜針規詢價合作</h2>
             <div class="title-line"></div>
         </div>
         <div class="contact-info">
@@ -297,12 +237,8 @@
     </div>
 </section>
 
-<!-- 頁腳 -->
-<footer>
-    © 2026 帝恒五金模具配件廠 All Rights Reserved
-</footer>
+<footer>© 2026 帝恒五金｜針規專家 All Rights Reserved</footer>
 
-<!-- 客服 -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -314,6 +250,5 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-
 </body>
 </html>
