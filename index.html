@@ -30,7 +30,7 @@
         /* 首頁輪播 */
         .banner{
             background:linear-gradient(rgba(0,43,92,0.85),rgba(0,43,92,0.85)),
-            url(https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png);
+            url(https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e24aba4da07d4d9ea22a6afd23b9995e.png);
             background-size:cover;background-position:center;
             color:#fff;text-align:center;padding:130px 20px;
         }
@@ -56,6 +56,23 @@
             box-shadow:0 3px 12px rgba(0,0,0,0.08);
             padding:30px;
             margin-bottom:30px;
+            display:flex;
+            align-items:center;
+            gap:25px;
+        }
+        .cate-img{
+            width:160px;
+            height:160px;
+            flex-shrink:0;
+        }
+        .cate-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            border-radius:6px;
+        }
+        .cate-content{
+            flex:1;
         }
         .cate-item h3{
             color:var(--main);
@@ -108,7 +125,7 @@
 <div class="header">
     <div class="container nav-wrap">
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/logo.png" alt="帝恒五金LOGO">
+            <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e24aba4da07d4d9ea22a6afd23b9995e.png" alt="帝恒五金LOGO">
         </div>
         <div class="nav-menu">
             <a href="#home">首頁</a>
@@ -141,13 +158,13 @@
                 <p>產品廣泛應用於模具製造、電子3C、小家電、汽車配件、光電、氣動元件、自動化設備等行業，標準規格現貨充足，非標訂單快速交貨，歡迎海內外客戶長期合作洽談。</p>
             </div>
             <div class="about-img">
-                <img src="https://raw.githubusercontent.com/dihenghardware/dihenghardware.github.io/main/pin001.png" alt="工廠實力">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e24aba4da07d4d9ea22a6afd23b9995e.png" alt="工廠實力">
             </div>
         </div>
     </div>
 </section>
 
-<!-- 產品中心 7大分類完整展示 -->
+<!-- 產品中心 7大分類 + 7張圖片完整展示 -->
 <section class="section" id="product">
     <div class="container">
         <div class="title">
@@ -155,81 +172,116 @@
             <div class="title-line"></div>
         </div>
 
-        <!-- 1 精密針規/量規系列 -->
+        <!-- 1 精密針規/量規系列 → CL001 -->
         <div class="cate-item">
-            <h3>一級分類1：精密針規／量規系列</h3>
-            <div class="cate-list">
-                <span>鎢鋼針規、合金針規</span>
-                <span>精密塞規、環規</span>
-                <span>間隙規、檢測銷規</span>
-                <span>定制非標針規、異形量規</span>
+            <div class="cate-img">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e24aba4da07d4d9ea22a6afd23b9995e.png" alt="精密針規/量規系列">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類1：精密針規／量規系列</h3>
+                <div class="cate-list">
+                    <span>鎢鋼針規、合金針規</span>
+                    <span>精密塞規、環規</span>
+                    <span>間隙規、檢測銷規</span>
+                    <span>定制非標針規、異形量規</span>
+                </div>
             </div>
         </div>
 
-        <!-- 2 模具精密配件系列 -->
+        <!-- 2 模具精密配件系列 → CL002 -->
         <div class="cate-item">
-            <h3>一級分類2：模具精密配件系列</h3>
-            <div class="cate-list">
-                <span>模具頂針、托針、扁頂針</span>
-                <span>司筒、頂管、空心針</span>
-                <span>模具定位銷、圓柱銷、導向銷</span>
-                <span>模具鑲件、鑲塊、止擋塊</span>
-                <span>精密墊片、間隔片、耐磨塊</span>
+            <div class="cate-img">
+                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/47961b0053474b1fbb833d0a42001b95.png" alt="模具精密配件系列">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類2：模具精密配件系列</h3>
+                <div class="cate-list">
+                    <span>模具頂針、托針、扁頂針</span>
+                    <span>司筒、頂管、空心針</span>
+                    <span>模具定位銷、圓柱銷、導向銷</span>
+                    <span>模具鑲件、鑲塊、止擋塊</span>
+                    <span>精密墊片、間隔片、耐磨塊</span>
+                </div>
             </div>
         </div>
 
-        <!-- 3 精密軸類/銷軸類 -->
+        <!-- 3 精密軸類/銷軸類 → CL003 -->
         <div class="cate-item">
-            <h3>一級分類3：精密軸類／銷軸類</h3>
-            <div class="cate-list">
-                <span>微型傳動軸、馬達軸</span>
-                <span>導向軸、滾針、實心軸</span>
-                <span>台階軸、偏心軸、非標異形軸</span>
-                <span>固定銷、連接銷、插銷</span>
+            <div class="cate-img">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/582e84c04f164ea18367521268703c1f.png" alt="精密軸類/銷軸類">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類3：精密軸類／銷軸類</h3>
+                <div class="cate-list">
+                    <span>微型傳動軸、馬達軸</span>
+                    <span>導向軸、滾針、實心軸</span>
+                    <span>台階軸、偏心軸、非標異形軸</span>
+                    <span>固定銷、連接銷、插銷</span>
+                </div>
             </div>
         </div>
 
-        <!-- 4 車削精密套管/襯套系列 -->
+        <!-- 4 車削精密套管/襯套系列 → CL004 -->
         <div class="cate-item">
-            <h3>一級分類4：車削精密套管／襯套系列</h3>
-            <div class="cate-list">
-                <span>精密套管、空心套管</span>
-                <span>內牙螺紋套、連接套</span>
-                <span>軸套、耐磨襯套、隔離套</span>
-                <span>非標車削圓套、異形套</span>
+            <div class="cate-img">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/299f02c3a473419eab7941a16ff88fa2.png" alt="車削精密套管/襯套系列">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類4：車削精密套管／襯套系列</h3>
+                <div class="cate-list">
+                    <span>精密套管、空心套管</span>
+                    <span>內牙螺紋套、連接套</span>
+                    <span>軸套、耐磨襯套、隔離套</span>
+                    <span>非標車削圓套、異形套</span>
+                </div>
             </div>
         </div>
 
-        <!-- 5 非標緊固件/連接柱系列 -->
+        <!-- 5 非標緊固件/連接柱系列 → CL005 -->
         <div class="cate-item">
-            <h3>一級分類5：非標緊固件／連接柱系列</h3>
-            <div class="cate-list">
-                <span>非標台階螺絲、異形螺絲</span>
-                <span>六角隔離柱、銅柱、鐵柱</span>
-                <span>細牙螺母、圓螺母、定位螺母</span>
-                <span>螺柱、焊接柱、接地柱</span>
+            <div class="cate-img">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/e24aba4da07d4d9ea22a6afd23b9995e.png" alt="非標緊固件/連接柱系列">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類5：非標緊固件／連接柱系列</h3>
+                <div class="cate-list">
+                    <span>非標台階螺絲、異形螺絲</span>
+                    <span>六角隔離柱、銅柱、鐵柱</span>
+                    <span>細牙螺母、圓螺母、定位螺母</span>
+                    <span>螺柱、焊接柱、接地柱</span>
+                </div>
             </div>
         </div>
 
-        <!-- 6 電子小家電精密五金 -->
+        <!-- 6 電子小家電精密五金 → CL006 -->
         <div class="cate-item">
-            <h3>一級分類6：電子小家電精密五金</h3>
-            <div class="cate-list">
-                <span>3C鏡頭壓圈、固定鎖圈</span>
-                <span>攝像機小型支架、固定五金</span>
-                <span>導電銅件、端子連接片</span>
-                <span>小家電卡扣、小折彎五金件</span>
+            <div class="cate-img">
+                <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/47961b0053474b1fbb833d0a42001b95.png" alt="電子小家電精密五金">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類6：電子小家電精密五金</h3>
+                <div class="cate-list">
+                    <span>3C鏡頭壓圈、固定鎖圈</span>
+                    <span>攝像機小型支架、固定五金</span>
+                    <span>導電銅件、端子連接片</span>
+                    <span>小家電卡扣、小折彎五金件</span>
+                </div>
             </div>
         </div>
 
-        <!-- 7 氣動小型精密配件 -->
+        <!-- 7 氣動小型精密配件 → CL007 -->
         <div class="cate-item">
-            <h3>一級分類7：氣動小型精密配件</h3>
-            <div class="cate-list">
-                <span>氣動閥芯、閥套</span>
-                <span>小型氣動接頭本體</span>
-                <span>活塞小軸、密封定位柱</span>
-                <span>氣動精密連接五金件</span>
+            <div class="cate-img">
+                <img src="https://p26-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/582e84c04f164ea18367521268703c1f.png" alt="氣動小型精密配件">
+            </div>
+            <div class="cate-content">
+                <h3>一級分類7：氣動小型精密配件</h3>
+                <div class="cate-list">
+                    <span>氣動閥芯、閥套</span>
+                    <span>小型氣動接頭本體</span>
+                    <span>活塞小軸、密封定位柱</span>
+                    <span>氣動精密連接五金件</span>
+                </div>
             </div>
         </div>
 
